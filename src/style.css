@@ -1,0 +1,13 @@
+html {
+    color-scheme: light dark;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+body {
+    height: 100vh;
+    color: #1f1f1f;
+    background: linear-gradient(to bottom, #bada55, #c0ffee);
+}
