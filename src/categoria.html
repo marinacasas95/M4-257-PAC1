@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+  <title>Receptes | Curs de cuina</title>
+</head>
+
+
+<body>
+  <include src="./src/partials/header.html"></include>
+  <section class="title-right">
+    <div class="container">
+      <img src="img/img-recepta.png" alt="Recepta principal">
+      <div class="text">
+        <h1>Receptes</h1>
+        <p>Descobreix els sabors intensos i equilibrats de la cuina coreana, plens de tradició i contrastos.</p>
+        <a href="./categoria.html" class="btn-secondary">Comencem amb un plat senzill</a>
+      </div>
+  </section>
+  <section class="carrousel">
+    <div class="container">
+      <h1>Quins plats aprendrem a cuinar</h1>
+      <p>Tria la teva recepta i comença a gaudir</p>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="cuerpo-targeta">
+              <img src="img/img1-car.png" alt="">
+              <a href="#" class="btn-primary">Saltejat d'albergínia</a>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="cuerpo-targeta">
+              <img src="img/img2-car.png" alt="">
+              <a href="#" class="btn-primary">Saltejat de calamar i tteokbokki</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="cuerpo-targeta">
+              <img src="img/img3-car.png" alt="">
+              <a href="./det1.html" class="btn-primary">Kimchi mak*</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cuerpo-targeta">
+              <img src="img/img4-car.png" alt="">
+              <a href="#" class="btn-primary">Bao</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cuerpo-targeta">
+              <img src="img/img5-car.png" alt="">
+              <a href="./det2.html" class="btn-primary">Chashu de cansalada*</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cuerpo-targeta">
+              <img src="img/img7-car.png" alt="">
+              <a href="#" class="btn-primary">Chaapsal</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cuerpo-targeta">
+              <img src="img/img13-car.png" alt="">
+              <a href="#" class="btn-primary">Dakgangjeong</a>
+            </div>
+          </div>
+
+
+          <!-- Controls -
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+         
+         If we need scrollbar
+         <div class="swiper-scrollbar"></div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+  </section>
+
+  </main>
+
+  <include src="./src/partials/footer.html"></include>
+
+
+</body>
+
+</html>

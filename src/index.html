@@ -1,18 +1,48 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ca">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parcel Vanilla App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <script type="module" src="app.js"></script>
+  <title>Inici</title>
 </head>
 
 <body>
-  <h1>Parcel Vanillaaaaaa App</h1>
-  <p>Edit <code>src/index.html</code> to get started!</p>
-  <include src="./src/included.html"></include>
+  <include src="./src/partials/header.html"></include>
+  <section class="title">
+    <div class="container">
+      <div class="text">
+        <h1>Curs de cuina coreana</h1>
+        <p>Aprèn les receptes més típiques de Corea</p>
+        <a href="./categoria.html" class="btn-primary">Accedeix a les receptes</a>
+      </div>
+      <img src="img/img-main-index.png" alt="Plat principal">
+    </div>
+  </section>
+  <section class="title-right">
+    <div class="container">
+      <img src="./img/img-recepta.png" alt="Recepta principal">
+      <div class="text">
+
+        <h1>Receptes</h1>
+
+        <p>Estàs a punt de descobrir els sabors únics de la cuina coreana, una gastronomia rica en contrastos on
+          conviuen
+          el picant, el fermentat i l'equilibri dels ingredients. Al llarg d'aquest recorregut aprendràs a preparar
+          plats
+          tradicionals com el kimchi, el bibimbap o el bulgogi, tot entenent la cultura i les tècniques que hi ha
+          darrere
+          de cada recepta. Prepara't per endinsar-te en una experiència culinària plena de sabor, color i tradició.</p>
+
+        <a href="./categoria.html" class="btn-secondary">Comencem amb un plat senzill</a>
+      </div>
+    </div>
+  </section>
+
+  <include src="./src/partials/footer.html"></include>
+
 </body>
 
 </html>
