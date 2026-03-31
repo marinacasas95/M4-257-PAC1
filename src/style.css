@@ -2,6 +2,7 @@ html {
     color-scheme: light dark;
     font-family: system-ui;
     height: 100%;
+    background: #1f1f1f;
 }
 header {
     background: #bc1823;
@@ -31,7 +32,7 @@ body {
     display: inline-block;
     color: #efefef;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 999px;
     font-weight: 600;
     text-transform: uppercase;
@@ -84,7 +85,7 @@ body {
 }
 .detail-score {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 100%;
 }
 .detail-item {
@@ -112,15 +113,32 @@ body {
     object-fit: cover;
 }
 .text {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
     margin: auto;
     border: 3px solid #00f7ff;
+    padding: 10px 20px 20px 20px;
 }
-
+.links .container .text {
+    border: 3px solid #eeff00;
+    padding: 20px;
+    color: #efefef;
+}
+.video {
+    max-width: 560px;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 20px;
+    display: block;
+    aspect-ratio: 16 / 9;
+}
+.video iframe {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: block;
+}
 .swiper {
     max-width: 1200px;
     margin: 0 auto;
@@ -158,13 +176,7 @@ body {
 .links {
     background: #1f1f1f;
 }
-.links .container {
-    background: #1f1f1f;
-    border: 3px solid #eeff00;
-    padding: 20px;
-    color: #efefef;
-    display: flex;
-}
+
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -180,5 +192,23 @@ body {
         height: auto;
         overflow-y: hidden;
         object-fit: cover;
+    }
+    .links .container .text {
+        flex-direction: column;
+        max-width: 1200px;
+    }
+    .text-detail {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        margin: auto;
+        border: 3px solid #00ff2a;
+        padding: 20px 20px 20px 20px;
+    }
+    .detail-score {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
