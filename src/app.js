@@ -37,7 +37,9 @@ const swiper = new Swiper(".swiper", {
 
 const infoBtn = document.querySelector(".info-btn");
 const ingredientsList = document.getElementById("ingredientsList");
+const imgWrapper = document.querySelector(".img-wrapper");
 
 infoBtn.addEventListener("click", () => {
     ingredientsList.classList.toggle("hidden");
+    imgWrapper.classList.toggle("open");
 });
