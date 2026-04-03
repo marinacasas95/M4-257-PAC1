@@ -181,16 +181,14 @@ body {
     }
 }
 .video {
+    width: 100%;
     max-width: 560px;
-    width: 60%;
-    height: 100%;
+    margin: 0 auto;
     padding-bottom: 20px;
-    display: block;
     aspect-ratio: 16 / 9;
 }
 .video iframe {
     width: 100%;
-    margin: auto;
     height: 100%;
     display: block;
 }
@@ -331,6 +329,8 @@ body {
     display: block;
     
   }
-  
+  .video {
+    width: 70%;
+}
 }
 }
