@@ -2,45 +2,48 @@
 <html lang="ca">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.scss">
   <script type="module" src="app.js"></script>
-  <title>Inici</title>
+  <title>Inici | Curs de cuina coreana</title>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Saltar al contingut principal</a>
   <include src="./src/partials/header.html"></include>
-  <section class="title">
-    <div class="container">
-      <div class="text">
-        <h1>Curs de cuina coreana</h1>
-        <p>Aprèn les receptes més típiques de Corea</p>
-        <a href="./categoria.html" class="btn btn-primary">Accedeix a les receptes</a>
+  <main id="main-content">
+    <section class="title">
+      <div class="container">
+        <div class="text">
+          <h1>Curs de cuina coreana</h1>
+          <p>Aprèn les receptes més típiques de Corea</p>
+          <a href="./categoria.html" class="btn btn-primary">Accedeix a les receptes</a>
+        </div>
+        <img src="img/img-main-index.png" alt="Plat principal">
       </div>
-      <img src="img/img-main-index.png" alt="Plat principal">
-    </div>
-  </section>
-  <section class="title-right">
-    <div class="container">
-      <img src="./img/img-recepta.png" alt="Recepta principal">
-      <div class="text">
+    </section>
+    <section class="title-right">
+      <div class="container">
+        <img src="./img/img-recepta.png" alt="Recepta principal">
+        <div class="text">
 
-        <h1>Receptes</h1>
+          <h2>Receptes</h2>
 
-        <p>Estàs a punt de descobrir els sabors únics de la cuina coreana, una gastronomia rica en contrastos on
-          conviuen
-          el picant, el fermentat i l'equilibri dels ingredients. Al llarg d'aquest recorregut aprendràs a preparar
-          plats
-          tradicionals com el kimchi, el bibimbap o el bulgogi, tot entenent la cultura i les tècniques que hi ha
-          darrere
-          de cada recepta. Prepara't per endinsar-te en una experiència culinària plena de sabor, color i tradició.</p>
+          <p>Estàs a punt de descobrir els sabors únics de la cuina coreana, una gastronomia rica en contrastos on
+            conviuen
+            el picant, el fermentat i l'equilibri dels ingredients. Al llarg d'aquest recorregut aprendràs a preparar
+            plats
+            tradicionals com el kimchi, el bibimbap o el bulgogi, tot entenent la cultura i les tècniques que hi ha
+            darrere
+            de cada recepta. Prepara't per endinsar-te en una experiència culinària plena de sabor, color i tradició.
+          </p>
 
-        <a href="./categoria.html" class="btn btn-secondary">Comencem amb un plat senzill</a>
+          <a href="./categoria.html" class="btn btn-secondary">Comencem amb un plat senzill</a>
+        </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </main>
   <include src="./src/partials/footer.html"></include>
 
 </body>

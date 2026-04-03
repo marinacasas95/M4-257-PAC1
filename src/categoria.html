@@ -2,90 +2,95 @@
 <html lang="ca">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.scss">
   <script type="module" src="app.js"></script>
-  <title>Receptes | Curs de cuina</title>
+  <title>Receptes | Curs de cuina coreana</title>
 </head>
 
 
 <body>
+  <a class="skip-link" href="#main-content">Saltar al contingut principal</a>
   <include src="./src/partials/header.html"></include>
-  <section class="title-right">
-    <div class="container">
-      <img src="img/img-recepta.png" alt="Recepta principal">
-      <div class="text">
-        <h1>Receptes</h1>
-        <p>Descobreix els sabors intensos i equilibrats de la cuina coreana, plens de tradició i contrastos.</p>
-        <a href="./categoria.html" class="btn btn-secondary">Comencem amb un plat senzill</a>
+  <main id="main-content">
+    <section class="title-right">
+      <div class="container">
+        <img src="img/img-recepta.png" alt="Recepta principal">
+        <div class="text">
+          <h1>Receptes</h1>
+          <p>Descobreix els sabors intensos i equilibrats de la cuina coreana, plens de tradició i contrastos.</p>
+          <a href="./categoria.html" class="btn btn-secondary">Comencem amb un plat senzill</a>
+        </div>
       </div>
-  </section>
-  <section class="carrousel">
-    <div class="container carrousel-container">
-      <h1>Quins plats aprendrem a cuinar</h1>
-      <p>Tria la teva recepta i comença a gaudir</p>
-      <div class="swiper recipes-swiper">
-        <div class="swiper-wrapper">
+    </section>
+    <section class="carrousel">
+      <div class="container carrousel-container">
+        <h2>Quins plats aprendrem a cuinar</h2>
+        <p>Tria la teva recepta i comença a gaudir</p>
+        <div class="swiper recipes-swiper">
+          <div class="swiper-wrapper">
 
-          <div class="swiper-slide">
-            <article class="cuerpo-targeta">
-              <img src="img/img1-car.png" alt="Saltejat d'albergínia">
-              <a href="#" class="btn btn-primary">Saltejat d'albergínia</a>
-            </article>
-          </div>
+            <div class="swiper-slide">
+              <article class="cuerpo-targeta">
+                <img src="img/img1-car.png" alt="Saltejat d'albergínia">
+                <h3><a href="#" class="btn btn-primary">Saltejat d'albergínia</a></h3>
+              </article>
+            </div>
 
-          <div class="swiper-slide">
-            <article class="cuerpo-targeta">
-              <img src="img/img2-car.png" alt="Saltejat de calamar i tteokbokki">
-              <a href="#" class="btn btn-primary">Saltejat de calamar i tteokbokki</a>
-            </article>
-          </div>
+            <div class="swiper-slide">
+              <article class="cuerpo-targeta">
+                <img src="img/img2-car.png" alt="Saltejat de calamar i tteokbokki">
+                <h3><a href="#" class="btn btn-primary">Saltejat de calamar i tteokbokki</a></h3>
+              </article>
+            </div>
 
-          <div class="swiper-slide">
-            <article class="cuerpo-targeta">
-              <img src="img/img3-car.png" alt="Kimchi mak">
-              <a href="./det1.html" class="btn btn-primary">Kimchi mak*</a>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="cuerpo-targeta">
-              <img src="img/img4-car.png" alt="Bao">
-              <a href="#" class="btn btn-primary">Bao</a>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="cuerpo-targeta">
-              <img src="img/img5-car.png" alt="Chashu de cansalada">
-              <a href="./det2.html" class="btn btn-primary">Chashu de cansalada*</a>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="cuerpo-targeta">
-              <img src="img/img7-car.png" alt="Chaapsal">
-              <a href="#" class="btn btn-primary">Chaapsal</a>
-            </article>
-          </div>
-          <!--<div class="swiper-slide">
+            <div class="swiper-slide">
+              <article class="cuerpo-targeta">
+                <img src="img/img3-car.png" alt="Kimchi mak">
+                <h3><a href="./det1.html" class="btn btn-primary">Kimchi mak*</a></h3>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cuerpo-targeta">
+                <img src="img/img4-car.png" alt="Bao">
+                <h3><a href="#" class="btn btn-primary">Bao</a></h3>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cuerpo-targeta">
+                <img src="img/img5-car.png" alt="Chashu de cansalada">
+                <h3><a href="./det2.html" class="btn btn-primary">Chashu de cansalada*</a></h3>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cuerpo-targeta">
+                <img src="img/img7-car.png" alt="Chaapsal">
+                <h3><a href="#" class="btn btn-primary">Chaapsal</a></h3>
+              </article>
+            </div>
+            <!--<div class="swiper-slide">
             <article class="cuerpo-targeta">
               <img src="img/img13-car.png" alt="Dakgangjeong">
-              <a href="#" class="btn btn-primary">Dakgangjeong</a>
+              <h3><a href="#" class="btn btn-primary">Dakgangjeong</a></h3>
             </article>
           </div>-->
 
 
-          <!-- Controls -
+            <!-- Controls -
          <div class="swiper-button-prev"></div>
          <div class="swiper-button-next"></div>
          
          If we need scrollbar
          <div class="swiper-scrollbar"></div> 
           <div class="swiper-pagination"></div>-->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-  </section>
+      </div>
+    </section>
 
   </main>
 
