@@ -18,11 +18,11 @@ const swiper = new Swiper(".swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    /*pagination: {
+    pagination: {
         el: ".swiper-pagination",
         clickable: true,
         type: "bullets",
-    },*/
+    },
     breakpoints: {
         768: {
             slidesPerView: 2,
@@ -33,4 +33,11 @@ const swiper = new Swiper(".swiper", {
             slidesPerGroup: 3,
         },
     },
+});
+
+const infoBtn = document.querySelector(".info-btn");
+const ingredientsList = document.getElementById("ingredientsList");
+
+infoBtn.addEventListener("click", () => {
+    ingredientsList.classList.toggle("hidden");
 });

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
     <script type="module" src="app.js"></script>
     <title>Recepta 1</title>
 </head>
@@ -20,8 +20,8 @@
                 <img src="img/img3-main.png" alt="Recepta Kimchi mak">
                 <div class="text">
                     <h1>Kimchi mak</h1>
-                    <h2>INGREDIENTS</h2>
-                    <ul>
+                    <h2><button class="info-btn">INGREDIENTS ▼</button></h2>
+                    <ul id="ingredientsList" class="hidden">
                         <li>2 cols xineses mitjanes </li>
                         <li>150 g de sal</li>
                         <li>1 l d'aigua </li>
@@ -30,7 +30,6 @@
                         <li>2 pastanagues, pelades i tallades en juliana </li>
                         <li>4 cebetes, tallades en diagonal en trossos d'1 cm</li>
                     </ul>
-
                 </div>
             </div>
         </section>

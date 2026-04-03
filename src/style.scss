@@ -1,3 +1,7 @@
+$primary: #bc1823;
+$secondary: #1f1f1f;
+$white: #efefef;
+
 *,
 *::before,
 *::after {
@@ -7,63 +11,72 @@ html {
     color-scheme: light dark;
     font-family: system-ui;
     height: 100%;
-    background: #1f1f1f;
+    background: $secondary;
 }
 header {
-    background: #bc1823;
-
+    background: $primary;
     padding: 20px;
-}
-header a {
+    a {
     text-decoration: none;
-    color: #efefef;
+    color: $white;
+}
 }
 footer,
 .footer {
-    background: #1f1f1f;
+    background: $secondary;
 
     padding: 20px;
-    color: #efefef;
+    color: $white;
 }
 body {
     height: 100vh;
-    color: #1f1f1f;
+    color: $secondary;
     margin: 0;
     display: flex;
     flex-direction: column;
 }
-.btn-secondary,
-.btn-primary {
+.info-btn {
+    background: transparent;
+    border: none;
+    color: $white;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+.btn {
     display: inline-block;
-    color: #efefef;
+    color: $white;
     text-decoration: none;
     padding: 10px;
     border-radius: 999px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-}
-.btn-secondary,
-.btn-primary:hover {
-    background-color: #1f1f1f;
-}
-.btn-primary,
-.btn-secondary:hover {
-    background-color: #bc1823;
-}
 
+&-secondary{
+    background-color: $secondary;
+}
+:hover {
+    background-color: $primary;
+}
+&-primary{
+    background-color: $primary;
+}
+:hover {
+    background-color: $secondary;
+}
+}
 /* Sections */
 .title,
 .carrousel,
 .text-center {
-    background: #efefef;
+    background: $white;
     margin: 0;
 }
 .title-right,
 .detail-score-section {
-    background: #bc1823;
+    background: $primary;
 
-    color: #efefef;
+    color: $white;
 }
 
 .container {
@@ -72,13 +85,14 @@ body {
     margin: auto;
 }
 
-.title-right .container,
-.title .container,
-.links .container {
+.title-right ,
+.title ,
+.links {
+    .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}}
 .carrousel-container {
     padding: 20px 20px 50px 20px;
     text-align: center;
@@ -93,6 +107,7 @@ body {
 .swiper-button-prev {
     display: none;
 }
+
 .text-detail {
     max-width: 1200px;
     display: flex;
@@ -136,13 +151,12 @@ body {
     flex-direction: column;
     align-items: center;
     margin: auto;
-
     padding: 10px 20px 20px 20px;
-}
-.links .container .text {
+
+.links & {
     padding: 20px;
-    color: #efefef;
-}
+    color: $white;
+}}
 .video {
     max-width: 560px;
     width: 60%;
@@ -167,15 +181,21 @@ body {
     align-content: center;
     display: flex;
 }*/
-.swiper-wrapper {
-    align-items: stretch;
+.swiper{
+
+    &-wrapper{
+        align-items: stretch;
+    }
+&-pagination-bullet {
+    background-color: $primary;
+    opacity: 0.4;
+    &-active {
+    opacity: 1;
+    background-color: $primary;
 }
-/*.swiper-slide {
-    background: white;
-    border-radius: 10px;
-    height: auto;
-    display: flex;
-}*/
+}
+}
+
 .cuerpo-targeta {
     width: 100%;
     background: white;
@@ -193,35 +213,43 @@ body {
 }
 
 .links {
-    background: #1f1f1f;
+    background: $secondary;
 }
-
+.hidden {
+    display: none;
+}
 @media (min-width: 768px) {
-    .title-right .container,
-    .title .container,
-    .links .container {
+    .title-right ,
+    .title ,
+    .links {
+        .container {
         flex-direction: row;
         margin: auto;
         max-width: 1200px;
         width: 100%;
         margin: auto;
+        }
     }
     .text {
         width: 50%;
         padding: 60px 40px;
+        
+        .links .container & {
+            flex-direction: column;
+        max-width: 1200px;
+        }
     }
-    .title-right img,
-    .title img,
-    .links img {
+    .title-right ,
+    .title ,
+    .links  { img {
         width: 50%;
         height: auto;
         overflow-y: hidden;
         object-fit: cover;
     }
-    .links .container .text {
-        flex-direction: column;
-        max-width: 1200px;
+        
     }
+    
     .text-detail {
         max-width: 1200px;
         display: flex;
@@ -236,12 +264,18 @@ body {
         flex-direction: row;
         justify-content: space-around;
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: #bc1823; /* color fletxes */
+
+    .swiper {
+        &-button-next,
+    &-button-prev {
+        color: $primary;
         width: 40px;
         height: 40px;
         display: block;
         background: transparent;
     }
+    &-pagination {
+        display: none;
+        color: $primary;
+    }}
 }
