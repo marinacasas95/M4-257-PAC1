@@ -37,9 +37,29 @@ const swiper = new Swiper(".swiper", {
 
 const infoBtn = document.querySelector(".info-btn");
 const ingredientsList = document.getElementById("ingredientsList");
-const imgWrapper = document.querySelector(".img-wrapper");
+const recipeHero = document.querySelector(".recipe-hero");
+if (infoBtn && recipeHero) {
+    infoBtn.addEventListener("click", () => {
+        recipeHero.classList.toggle("is-open");
 
-infoBtn.addEventListener("click", () => {
-    ingredientsList.classList.toggle("hidden");
-    imgWrapper.classList.toggle("open");
+        const isOpen = recipeHero.classList.contains("is-open");
+
+        infoBtn.setAttribute("aria-expanded", isOpen);
+        infoBtn.textContent = isOpen ? "INGREDIENTS ▲" : "INGREDIENTS ▼";
+    });
+}
+document.documentElement.classList.add("js");
+
+const popinElements = document.querySelectorAll(".popin");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+            console.log("app.js carregat");
+        }
+    });
 });
+
+popinElements.forEach((el) => observer.observe(el));

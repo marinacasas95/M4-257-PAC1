@@ -16,7 +16,13 @@
   <main id="main-content">
     <section class="title-right">
       <div class="container">
-        <img src="img/img-recepta.png" alt="Recepta principal">
+        <picture class="title-right__picture">
+          <source srcset="img/img-recepta.png?as=avif&width=900" type="image/avif">
+
+          <source srcset="img/img-recepta.png?as=webp&width=900" type="image/webp">
+
+          <img src="img/img-recepta.png?width=900" alt="Recepta principal" class="title-right__img">
+        </picture>
         <div class="text">
           <h1>Receptes</h1>
           <p>Descobreix els sabors intensos i equilibrats de la cuina coreana, plens de tradició i contrastos.</p>
@@ -33,39 +39,75 @@
 
             <div class="swiper-slide">
               <article class="cuerpo-targeta">
-                <img src="img/img1-car.png" alt="Saltejat d'albergínia">
+                <picture class="recipe-card__picture">
+                  <source srcset="img/img1-car.png?as=avif&width=600" type="image/avif">
+
+                  <source srcset="img/img1-car.png?as=webp&width=600" type="image/webp">
+
+                  <img src="img/img1-car.png?width=600" alt="Saltejat d'albergínia" class="recipe-card__img">
+                </picture>
                 <h3><a href="#" class="btn btn-primary">Saltejat d'albergínia</a></h3>
               </article>
             </div>
 
             <div class="swiper-slide">
               <article class="cuerpo-targeta">
-                <img src="img/img2-car.png" alt="Saltejat de calamar i tteokbokki">
+                <picture class="recipe-card__picture">
+                  <source srcset="img/img2-car.png?as=avif&width=600" type="image/avif">
+
+                  <source srcset="img/img2-car.png?as=webp&width=600" type="image/webp">
+
+                  <img src="img/img2-car.png?width=600" alt="Saltejat de calamar i tteokbokki" class="recipe-card__img">
+                </picture>
                 <h3><a href="#" class="btn btn-primary">Saltejat de calamar i tteokbokki</a></h3>
               </article>
             </div>
 
             <div class="swiper-slide">
               <article class="cuerpo-targeta">
-                <img src="img/img3-car.png" alt="Kimchi mak">
+                <picture class="recipe-card__picture">
+                  <source srcset="img/img3-car.png?as=avif&width=600" type="image/avif">
+
+                  <source srcset="img/img3-car.png?as=webp&width=600" type="image/webp">
+
+                  <img src="img/img3-car.png?width=600" alt="Kimchi mak" class="recipe-card__img">
+                </picture>
                 <h3><a href="./det1.html" class="btn btn-primary">Kimchi mak*</a></h3>
               </article>
             </div>
             <div class="swiper-slide">
               <article class="cuerpo-targeta">
-                <img src="img/img4-car.png" alt="Bao">
+                <picture class="recipe-card__picture">
+                  <source srcset="img/img4-car.png?as=avif&width=600" type="image/avif">
+
+                  <source srcset="img/img4-car.png?as=webp&width=600" type="image/webp">
+
+                  <img src="img/img4-car.png?width=600" alt="Bao" class="recipe-card__img">
+                </picture>
                 <h3><a href="#" class="btn btn-primary">Bao</a></h3>
               </article>
             </div>
             <div class="swiper-slide">
               <article class="cuerpo-targeta">
-                <img src="img/img5-car.png" alt="Chashu de cansalada">
+                <picture class="recipe-card__picture">
+                  <source srcset="img/img5-car.png?as=avif&width=600" type="image/avif">
+
+                  <source srcset="img/img5-car.png?as=webp&width=600" type="image/webp">
+
+                  <img src="img/img5-car.png?width=600" alt="Chashu de cansalada" class="recipe-card__img">
+                </picture>
                 <h3><a href="./det2.html" class="btn btn-primary">Chashu de cansalada*</a></h3>
               </article>
             </div>
             <div class="swiper-slide">
               <article class="cuerpo-targeta">
-                <img src="img/img7-car.png" alt="Chaapsal">
+                <picture class="recipe-card__picture">
+                  <source srcset="img/img7-car.png?as=avif&width=600" type="image/avif">
+
+                  <source srcset="img/img7-car.png?as=webp&width=600" type="image/webp">
+
+                  <img src="img/img7-car.png?width=600" alt="Chaapsal" class="recipe-card__img">
+                </picture>
                 <h3><a href="#" class="btn btn-primary">Chaapsal</a></h3>
               </article>
             </div>
@@ -89,6 +131,7 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-pagination"></div>
         </div>
+        <p>* Recepta publicada</p>
       </div>
     </section>
 

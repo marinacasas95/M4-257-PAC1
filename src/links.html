@@ -14,62 +14,77 @@
     <include src="./src/partials/header.html"></include>
 
     <main id="main-content" class="links">
-        <div class="container">
-            <img src="img/img-credits.png" alt="Fonts i crèdits">
-            <div class="text">
-                <h1>Fonts i crèdits</h1>
+        <div class="container links-container">
+            <picture class="links__picture">
+                <!-- AVIF -->
+                <source srcset="
+      img/img-credits.png?as=avif&width=900 1x,
+      img/img-credits.png?as=avif&width=1800 2x" type="image/avif">
 
-                <section>
-                    <h2>Origen del contingut</h2>
-                    <p>
-                        Les receptes incloses en aquest lloc web s'han elaborat a partir dels materials i apunts
-                        obtinguts en un curs de cuina impartit per Muntsa Holgado, vinculat al projecte
-                        <em>Cuinant Cultures</em>.
-                    </p>
-                    <p>
-                        La web de referència del projecte és
-                        <a href="https://cuinantcultures.cat" target="_blank" rel="noopener noreferrer">
-                            cuinantcultures.cat
-                        </a>.
-                    </p>
-                    <p>
-                        Cal indicar que les receptes concretes utilitzades en aquesta pràctica no han estat extretes
-                        literalment del lloc web, ja que aquest no publica el detall complet de les receptes
-                        emprades aquí, sinó que s’han reconstruït a partir del contingut treballat durant el curs.
-                    </p>
-                </section>
+                <!-- WEBP -->
+                <source srcset="
+      img/img-credits.png?as=webp&width=900 1x,
+      img/img-credits.png?as=webp&width=1800 2x" type="image/webp">
 
-                <section>
-                    <h2>Autoria i atribució</h2>
-                    <p>
-                        L'autoria original del contingut culinari i del material base del curs correspon a
-                        Muntsa Holgado i al projecte <em>Cuinant Cultures</em>. Aquesta pràctica acadèmica
-                        fa servir aquest material únicament amb finalitat educativa i de manera no comercial.
-                    </p>
-                </section>
+                <!-- fallback -->
+                <img src="img/img-credits.png?width=900" alt="Fonts i crèdits" class="links__img">
+            </picture>
+            <div class="credits-box">
+                <div class="text credits-roll">
+                    <h1>Fonts i crèdits</h1>
 
-                <section>
-                    <h2>Imatges</h2>
-                    <p>
-                        Les imatges utilitzades en aquest lloc web han estat generades amb eines d'intel·ligència
-                        artificial de ChatGPT a partir de fotografies fetes durant el curs de cuina.
-                    </p>
-                    <p>
-                        Aquestes imatges no corresponen en cap cas a fotografies originals publicades al web
-                        de referència, sinó a recreacions visuals generades a partir del material fotogràfic propi
-                        obtingut en el context del curs.
-                    </p>
-                </section>
+                    <section>
+                        <h2>Origen del contingut</h2>
+                        <p>
+                            Les receptes incloses en aquest lloc web s'han elaborat a partir dels materials i apunts
+                            obtinguts en un curs de cuina impartit per Muntsa Holgado, vinculat al projecte
+                            <em>Cuinant Cultures</em>.
+                        </p>
+                        <p>
+                            La web de referència del projecte és
+                            <a href="https://cuinantcultures.cat" target="_blank" rel="noopener noreferrer">
+                                cuinantcultures.cat
+                            </a>.
+                        </p>
+                        <p>
+                            Cal indicar que les receptes concretes utilitzades en aquesta pràctica no han estat extretes
+                            literalment del lloc web, ja que aquest no publica el detall complet de les receptes
+                            emprades aquí, sinó que s’han reconstruït a partir del contingut treballat durant el curs.
+                        </p>
+                    </section>
 
-                <section>
-                    <h2>Ús d'intel·ligència artificial</h2>
-                    <p>
-                        En aquesta pràctica s'han utilitzat eines d'IA generativa exclusivament per a l'obtenció
-                        d'imatges. El desenvolupament del lloc web, l'estructura, el codi i la implementació tècnica
-                        s'han realitzat de forma independent per complir els requisits de l'activitat.
-                    </p>
+                    <section>
+                        <h2>Autoria i atribució</h2>
+                        <p>
+                            L'autoria original del contingut culinari i del material base del curs correspon a
+                            Muntsa Holgado i al projecte <em>Cuinant Cultures</em>. Aquesta pràctica acadèmica
+                            fa servir aquest material únicament amb finalitat educativa i de manera no comercial.
+                        </p>
+                    </section>
 
-                </section>
+                    <section>
+                        <h2>Imatges</h2>
+                        <p>
+                            Les imatges utilitzades en aquest lloc web han estat generades amb eines d'intel·ligència
+                            artificial de ChatGPT a partir de fotografies fetes durant el curs de cuina.
+                        </p>
+                        <p>
+                            Aquestes imatges no corresponen en cap cas a fotografies originals publicades al web
+                            de referència, sinó a recreacions visuals generades a partir del material fotogràfic propi
+                            obtingut en el context del curs.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Ús d'intel·ligència artificial</h2>
+                        <p>
+                            En aquesta pràctica s'han utilitzat eines d'IA generativa exclusivament per a l'obtenció
+                            d'imatges. El desenvolupament del lloc web, l'estructura, el codi i la implementació tècnica
+                            s'han realitzat de forma independent per complir els requisits de l'activitat.
+                        </p>
+
+                    </section>
+                </div>
             </div>
         </div>
     </main>
