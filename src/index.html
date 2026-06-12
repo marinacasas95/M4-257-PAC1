@@ -20,9 +20,10 @@
 
         <source media="(max-width: 1199px)" srcset="img/hero-corea.png?as=webp&width=1200" type="image/webp">
 
-        <source srcset="img/hero-corea.png?as=webp&width=1920" type="image/webp">
+        <source srcset="img/hero-corea.png?as=webp&width=1600" type="image/webp">
 
-        <img src="img/hero-corea.png?width=1920" alt="Taula amb menjar coreà" class="hero__img">
+        <img src="img/hero-corea.png?width=1920" alt="Taula amb menjar coreà" class="hero__img" fetchpriority="high"
+          decoding="async">
       </picture>
       <div class="container">
         <div class="text hero__content">
@@ -78,13 +79,18 @@
     </section>
     <section class="title-right">
       <div class="container">
-        <picture class="popin title-right__picture">
-          <source srcset="img/img-main-index.png?as=avif&width=900" type="image/avif">
+        <source type="image/avif" srcset="
+      img/img-main-index.png?as=avif&width=480 480w,
+      img/img-main-index.png?as=avif&width=720 720w,
+      img/img-main-index.png?as=avif&width=900 900w">
 
-          <source srcset="img/img-main-index.png?as=webp&width=900" type="image/webp">
+        <source type="image/webp" srcset="
+      img/img-main-index.png?as=webp&width=480 480w,
+      img/img-main-index.png?as=webp&width=720 720w,
+      img/img-main-index.png?as=webp&width=900 900w">
 
-          <img src="img/img-main-index.png?width=900" alt="Plat principal" class="title-right__img" loading="lazy"
-            decoding="async">
+        <img src="img/img-main-index.png?width=720" alt="Plat principal" class="title-right__img" loading="lazy"
+          decoding="async">
         </picture>
 
         <div class="text">
