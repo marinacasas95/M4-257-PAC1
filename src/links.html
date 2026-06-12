@@ -17,19 +17,20 @@
     <main id="main-content" class="links">
         <div class="container links-container">
             <picture class="links__picture">
-                <!-- AVIF -->
-                <source srcset="
-      img/img-credits.png?as=avif&width=900 1x,
-      img/img-credits.png?as=avif&width=1800 2x" type="image/avif">
+                <source type="image/avif" srcset="
+      img/img-credits.png?as=avif&width=480 480w,
+      img/img-credits.png?as=avif&width=720 720w,
+      img/img-credits.png?as=avif&width=900 900w,
+      img/img-credits.png?as=avif&width=1440 1440w" sizes="(max-width: 768px) 100vw, 721px">
 
-                <!-- WEBP -->
-                <source srcset="
-      img/img-credits.png?as=webp&width=900 1x,
-      img/img-credits.png?as=webp&width=1800 2x" type="image/webp">
+                <source type="image/webp" srcset="
+      img/img-credits.png?as=webp&width=480 480w,
+      img/img-credits.png?as=webp&width=720 720w,
+      img/img-credits.png?as=webp&width=900 900w,
+      img/img-credits.png?as=webp&width=1440 1440w" sizes="(max-width: 768px) 100vw, 721px">
 
-                <!-- fallback -->
-                <img src="img/img-credits.png?width=900" alt="Fonts i crèdits" class="links__img" width="1024"
-                    height="979">
+                <img src="img/img-credits.png?width=720" alt="Fonts i crèdits" class="links__img" width="1024"
+                    height="979" loading="lazy" decoding="async">
             </picture>
             <div class="credits-box">
                 <div class="text credits-roll">
